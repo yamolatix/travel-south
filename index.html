@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Main CSS -->
+    <link href="assets/css/main.css" rel="stylesheet" defer>
+
+    <!-- Icons -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+        type='text/css'>
+
+    <!-- Favicon -->
+    <link rel="icon" href="#" />
+
+    <!-- Title -->
+    <title>Darom Travel by Gaby Bokler</title>
+
+</head>
+
+<body class="text-primary font-bebas">
+    <!-- Navbar -->
+    <!-- 
+    TODO EN LA PARTE DE SMARTPHONE LAS BARS SE VAN AL COSTADO
+    TODO: LOS ESPACIOS DE LOS COSTADOS DEL NAVBAR FIJAR BIEN
+    TODO: MENU RESPONSIVE: SEPARAR LA LISTA DEL MENU
+    TODO: MENU RESPONSIVE: LA LETRA NO ES TAN FINA COMO DEBERIA SER.
+    TODO: EL TEXTO ESTA UN POCO SEPARADO DEL LOGO
+    TODO: TEXTO DEL LOGO CON LINK AL INICIO
+    TODO: TEXTO DEL LOGO MAS SEPARADO
+    TODO: LAS BARS DEL RESPONSIVE SE TIENEN QUE HACER ANTES APARECEN RECIÉN CUANDO LA PANTALLA ES MUY CHICA
+-->
+    <header id="navbar" class=" w-full lg:pt-6 pt-4 2xl:px-[288px] lg:px-24 px-4 space-between">
+        <nav class="flex items-center">
+            <a href="/index.html">
+                <img class="h-auto block max-w-[81px] w-[41px] lg:w-[81px]" src="/assets/images/logo.png"
+                    alt="Darom Travel - Logo">
+            </a>
+
+            <div class="w-80 ml-2 text-center">
+                <h1 class="font-playfair uppercase text-left tracking-wider text-xs lg:text-2xl">Darom Travel</h2>
+                    <h2 class="font-playfair uppercase text-left tracking-wider text-[8px] lg:text-base">By Gaby Bokler
+                    </h2>
+            </div>
+
+            <ul id="menu"
+                class="hidden fixed top-0 right-0 px-10 py-16 bg-secondary z-50 justify-end md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6 md:w-full text-center">
+
+                <li class="md:hidden z-90 fixed top-4 right-6">
+                    <a href="javascript:void(0)" class="text-right text-secondary text-xl w-0.5 h-0.5 text-white"
+                        onclick="toggleMenu()"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                </li>
+
+                <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight "
+                        href="#">Home</a></li>
+                <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight "
+                        href="#">About Us</a></li>
+                <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight "
+                        href="#">Destinations</a></li>
+                <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight "
+                        href="#">Services</a></li>
+                <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight "
+                        href="#">Tips</a></li>
+                <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight "
+                        href="#">Reviews</a></li>
+                <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight "
+                        href="#">Connect</a></li>
+                <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight  lg:visible invisible"
+                        href="#">HE</a></li>
+            </ul>
+
+            <div class="flex items-end md:hidden">
+                <button class="text-primary text-xl font-bold hover:opacity-100 duration-300 leading-none"
+                    onclick="toggleMenu()">
+                    &#9776;
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar -->
+
+    <main>
+        <section class="flex lg:justify-between lg:flex-row flex-col items-center">
+            <!-- TODO: TEXTO ACORDE A LAS DIMENSIONES QUE SE VAYAN DANDO EN EL SITIO RESPONSIVE -->
+            <div class="2xl:px-[288px] lg:px-24 px-4 lg:basis-1/2 justify-center lg:text-left text-center">
+                <span class="text-base">Span Pre Title</span>
+                <h1 class="lg:w-[516px] w-[300px] lg:text-5xl text-3xl font-playfair font-black">Tailored-made trips &
+                    experiences in South
+                    America</h1>
+                <button
+                    class="mt-5 lg:mt-8 text-lg text-white bg-secondary h-[46px] w-[300px] rounded-full hover:bg-tertiary">Our
+                    Destinations</button>
+            </div>
+            <!-- 
+                TODO: CORREGIR IMG. CUANDO SE HACE RESPONSIVE TENGA UN LIMITE Y NO SE SIGA ACHICANDO
+                TODO: QUE LA IMAGEN CUADRE JUSTO EN EL CENTRO PARA QUE SE VEA MEJOR AL OJO
+             -->
+            <div class="flex lg:basis-1/2 p-0 px-4 lg:px-0 mt-7 lgmt-0">
+                <img class="min-w-[351px]" src="/assets/images/portada.jpg" alt="Portada de Bienvenida">
+            </div>
+        </section>
+
+
+        <section class="flex justify-center mt-20">
+            <div class="mr-7">
+                <img class="w-60 rounded-full" src="/assets/images/destinos.jpg" alt="Destinos">
+                <h3 class="text-2xl mt-4 text-center">Chubut</h3>
+            </div>
+
+            <div class="mr-7">
+            <img class="w-60 rounded-full" src="/assets/images/destinos.jpg" alt="Destinos">
+                <h3 class="text-2xl mt-4 text-center">Mendoza</h3>
+            </div>
+
+            <div class="mr-7">
+                <img class="w-60 rounded-full" src="/assets/images/destinos.jpg" alt="Destinos">
+                <h3 class="text-2xl mt-4 text-center">Salta</h3>
+            </div>
+
+            <div class="mr-7">
+                <img class="w-60 rounded-full" src="/assets/images/destinos.jpg" alt="Destinos">
+                <h3 class="text-2xl mt-4 text-center">Jujuy</h3>
+            </div>
+
+            <div class="mr-7">
+                <img class="w-60 rounded-full" src="/assets/images/destinos.jpg" alt="Destinos">
+                <h3 class="text-2xl mt-4 text-center">Misiones</h3>
+            </div>
+
+            <div class="mr-7">
+                <img class="w-60 rounded-full" src="/assets/images/destinos.jpg" alt="Destinos">
+                <h3 class="text-2xl mt-4 text-center">Santa Cruz</h3>
+            </div>
+
+        </section>
+
+
+
+
+        <section class="flex 2xl:px-[288px] lg:px-24 px-4 lg:mt-[75px] mt-[60px] ">
+            <div class="basis-7/12">
+                <span>About us</span>
+                <h3 class="font-playfair text-3xl">About Us Section Title</h3>
+                <p class="font-playfair font-thin text-sm w-[711px] pr-16 mt-5 leading-relaxed">Lorem ipsum dolor sit
+                    amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                    et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                    dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                    et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                    dolor sit amet.</p>
+                <p class="font-playfair font-thin text-sm w-[711px] pr-16 mt-5 leading-relaxed">Lorem ipsum dolor sit
+                    amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                    tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="bg-secondary text-white basis-5/12 px-16 py-10">
+                <span>Connect with us</span>
+                <h3 class="font-playfair text-3xl">Let’s design your trip</h3>
+                <p class="font-playfair text-sm mt-5 leading-relaxed">Lorem ipsum dolor sit amet, consetetur sadipscing
+                    elitr, sed diam nonumy eirmod
+                    tempor invidunt ut.</p>
+                <h4 class="font-playfair text-lg mt-5">+54-0000-0000</h4>
+                <h4 class="font-playfair text-lg mt-5">info@daromtravel.com</h4>
+                <button
+                    class="text-lg h-[46px] w-[300px] rounded-full bg-white text-secondary hover:bg-tertiary hover:text-white mt-5">Fill
+                    our contact form</button>
+            </div>
+        </section>
+
+
+        <div>
+            <h1>HOLA</h1>
+        </div>
+        <div>
+            <h1>HOLA</h1>
+        </div>
+        <div>
+            <h1>HOLA</h1>
+        </div>
+        <div>
+            <h1>HOLA</h1>
+        </div>
+        <div>
+            <h1>HOLA</h1>
+        </div>
+
+
+    </main>
+
+    <!-- JavaScript file -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
