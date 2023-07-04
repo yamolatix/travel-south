@@ -77,7 +77,7 @@
                         href="#">Reviews</a></li>
                 <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight "
                         href="#">Connect</a></li>
-                <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight  lg:visible invisible"
+                <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight lg:visible invisible"
                         href="#">HE</a></li>
             </ul>
 
@@ -197,31 +197,86 @@
         </section>
 
         <section class="my-20">
-            <img class="opacity-75 w-full lg:h-auto h-[322px] object-none" src="/assets/images/banner.jpg" alt="Glaciar Perito Moreno">
+            <img class="opacity-75 w-full lg:h-auto h-[322px] object-cover lg:object-cover"
+                src="/assets/images/banner.jpg" alt="Glaciar Perito Moreno">
         </section>
 
-
-        <div>
-            <h1>HOLA</h1>
-        </div>
-        <div>
-            <h1>HOLA</h1>
-        </div>
-        <div>
-            <h1>HOLA</h1>
-        </div>
-        <div>
-            <h1>HOLA</h1>
-        </div>
-        <div>
-            <h1>HOLA</h1>
-        </div>
-
-
+        <section class="grid lg:grid-cols-4 grid-cols-2 gap-x-12 justify-items-center lg:mx-40 mx-10">
+            <div>
+                <img class="h-28" src="/assets/images/plane-solid.svg" alt="">
+                <h3 class="text-2xl text-center mt-5">Air Tickets</h3>
+            </div>
+            <div>
+                <img class="h-28" src="/assets/images/car-solid.svg" alt="">
+                <h3 class="text-2xl text-center mt-5">Rent a car</h3>
+            </div>
+            <div>
+                <img class="h-28" src="/assets/images/ticket-solid.svg" alt="">
+                <h3 class="text-2xl text-center mt-5">Event tickets</h3>
+            </div>
+            <div>
+                <img class="h-28" src="/assets/images/bell-concierge-solid.svg" alt="">
+                <h3 class=" text-2xl text-center mt-5">Experiencies</h3>
+            </div>
+        </section>
     </main>
 
+    <footer class="bg-primary text-white 2xl:px-[288px] lg:px-24 px-4 pt-10 lg:pb-14 pb-10 ">
+
+        <div class="grid grid-cols-4">
+
+            <div class="lg:visible invisible">
+                <h2>About Us</h2>
+                <h2 class="font-playfair text-sm">Our experience</h2>
+                <h2 class="font-playfair text-sm">Destinations</h2>
+                <h2 class="font-playfair text-sm">Testimonials</h2>
+            </div>
+
+            <div class="lg:visible invisible">
+                <h2>Services</h2>
+                <h2 class="font-playfair text-sm">Plane tickets</h2>
+                <h2 class="font-playfair text-sm">Experiencies</h2>
+                <h2 class="font-playfair text-sm">Rent a Car</h2>
+            </div>
+
+            <div class="col-span-2 col-row-2">
+                <h2>Connect with us</h2>
+                <p class="font-playfair text-sm">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                    nonumy eirmod tempor invidunt ut.
+                </p>
+
+                <div class="flex">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <h4 class="font-playfair text-lg">+54-0000-0000</h4>
+                </div>
+
+                <div class="flex">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <h4 class="font-playfair text-lg">info@daromtravel.com</h4>
+                </div>
+
+                <div class="flex">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div class="">
+                <h2>Subscribe to our Newsletter</h2>
+                <form action="#">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <button type="submit"
+                        class="text-lg text-white bg-secondary h-[46px] w-[152px] rounded-full hover:bg-tertiary">Subscribe</button>
+                </form>
+            </div>
+            
+        </div>
+    </footer>
+
+
     <!-- JavaScript file -->
-    <script src="assets/js/main.js"></script>
+    <script src=" assets/js/main.js"></script>
 </body>
 
 </html>
