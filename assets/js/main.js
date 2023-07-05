@@ -21,11 +21,8 @@ tailwind.config = {
                 bebas: ['Bebas Neue', 'sans-serif'],
                 playfair: ['Playfair Display', 'serif']
             },
-            screens: {
-                'movil':'384px',
-                'smartphone':'640px',
-                'laptop': "1024px",
-                'desktop': "1920px"
+            backgroundImage: {
+                'destinations': "url('/assets/images/patagonia.jpg')"
             }
         }
     }
