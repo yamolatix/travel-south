@@ -1,0 +1,3 @@
+#carrousel {
+    grid-auto-columns: calc((100% /5) - 12px);
+}
