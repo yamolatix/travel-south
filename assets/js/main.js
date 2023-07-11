@@ -32,6 +32,34 @@ carousel.addEventListener("mousemove", dragging)
 document.addEventListener("mouseup", dragStop)
 
 
+const buttonsWrapper = document.querySelector("#slash");
+
+buttonsWrapper.addEventListener("click", e => {
+    const buttonSlash = e.target.nodeName;
+
+    if (buttonSlash === "BUTTON") {
+        console.log("buttonsWrapper.children", buttonsWrapper.children);
+        Array.from(buttonsWrapper.children).forEach(item =>
+            item.classList.remove("active")
+        );
+        if (e.target.classList.contains("first")) {
+            carousel.style.transform = "translateX(-0%)";
+            e.target.classList.add("active");
+        } else if (e.target.classList.contains("second")) {
+            carousel.style.transform = "translateX(-33.33333333333333%)";
+            e.target.classList.add("active");
+        } else if (e.target.classList.contains('third')) {
+            carousel.style.transform = 'translatex(-66.6666666667%)';
+            e.target.classList.add('active');
+        } else if (e.target.classList.contains('fourth')) {
+            carousel.style.transform = 'translatex(-66.6666666667%)';
+            e.target.classList.add('active');
+        }
+    }
+});
+
+
+
 
 tailwind.config = {
     theme: {

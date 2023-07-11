@@ -2,10 +2,29 @@
     grid-auto-columns: calc((100% / 6) - 12px);
 }
 
+.dragging {
+    scroll-behavior: auto;
+}
+
 .dragging li {
     cursor: grab;
     user-select: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width:1200px) {
