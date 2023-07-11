@@ -1,5 +1,6 @@
-.carousel {
+#carousel {
     grid-auto-columns: calc((100% / 6) - 12px);
+    transition: all 1s ease-in-out;
 }
 
 .dragging {
@@ -11,28 +12,15 @@
     user-select: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#slash .active {
+    color: #D0B280;
+}
 
 @media screen and (max-width:1200px) {
     .carousel {
         grid-auto-columns: calc((100% / 4) - 12px);
     }
 }
-
 
 @media screen and (max-width:750px) {
     .carousel {

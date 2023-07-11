@@ -1,4 +1,3 @@
-// Responsive Toggle
 const menu = document.getElementById('menu');
 function toggleMenu() {
     menu.classList.toggle('hidden');
@@ -6,7 +5,7 @@ function toggleMenu() {
     menu.classList.toggle('h-screen');
 }
 
-const carousel = document.querySelector(".carousel")
+const carousel = document.getElementById("carousel")
 
 let isDragging = false, startX, startScrollLeft;
 
@@ -32,13 +31,12 @@ carousel.addEventListener("mousemove", dragging)
 document.addEventListener("mouseup", dragStop)
 
 
-const buttonsWrapper = document.querySelector("#slash");
+const buttonsWrapper = document.getElementById('slash');
 
 buttonsWrapper.addEventListener("click", e => {
     const buttonSlash = e.target.nodeName;
 
     if (buttonSlash === "BUTTON") {
-        console.log("buttonsWrapper.children", buttonsWrapper.children);
         Array.from(buttonsWrapper.children).forEach(item =>
             item.classList.remove("active")
         );
@@ -52,14 +50,11 @@ buttonsWrapper.addEventListener("click", e => {
             carousel.style.transform = 'translatex(-66.6666666667%)';
             e.target.classList.add('active');
         } else if (e.target.classList.contains('fourth')) {
-            carousel.style.transform = 'translatex(-66.6666666667%)';
+            carousel.style.transform = 'translatex(-100%)';
             e.target.classList.add('active');
         }
     }
 });
-
-
-
 
 tailwind.config = {
     theme: {
