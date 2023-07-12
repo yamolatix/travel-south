@@ -1,33 +1,24 @@
-#carousel {
+#destinations-carousel {
     grid-auto-columns: calc((100% / 6) - 12px);
     transition: all 1.5s ease-in-out;
 }
 
-/* #carousel-reviews {
-    grid-auto-columns: calc((100% / ) - 12px);
-} */
-
-.dragging {
-    scroll-behavior: auto;
+#reviews-carousel, #favorites-carousel {
+    transition: all 3s ease-in-out;
 }
 
-.dragging li {
-    cursor: grab;
-    user-select: none;
-}
-
-#slash .active {
+.option-list .active {
     color: #D0B280;
 }
 
 @media screen and (max-width:1200px) {
-    .carousel {
+    #destinations-carousel {
         grid-auto-columns: calc((100% / 4) - 12px);
     }
 }
 
 @media screen and (max-width:750px) {
-    .carousel {
-        grid-auto-columns: calc((100% / 2) - 12px);
+    #destinations-carousel {
+        grid-auto-columns: calc((100% / 3) - 12px);
     }
 }
