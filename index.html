@@ -16,7 +16,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Main CSS -->
-    <link href="assets/css/main.css" rel="stylesheet" defer>
+    <link href="assets/css/main.css" rel="stylesheet">
 
     <!-- Icons -->
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
@@ -31,7 +31,6 @@
 </head>
 
 <body class="text-primary font-bebas">
-
     <div>
         <a href="#"
             class="z-10 fixed w-[70px] h-[70px] rounded-full bg-whatsapp text-center bottom-0 right-0 lg:mr-11 mr-4 mb-2.5">
@@ -235,32 +234,16 @@
         </section>
 
 
-
-
-
-
         <section class="2xl:mx-[288px] lg:mx-24 mx-4 mt-20">
             <h2 class="text-3xl font-playfair text-center">What our travelers think of us</h2>
-            <div class=" flex justify-between overflow-hidden scroll-smooth text-center mt-6">
 
-                <div  class="flex justify-between overflow-hidden scroll-smooth">
-                    <div class="py-8 px-6 w-[280px] shadow-lg">
-                        <div class="text-base text-tertiary">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                        </div>
-                        <h3 class="text-2xl mt-6">Customer name</h3>
-                        <p class="text-sm font-playfair mt-6 leading-6	">Lorem ipsum dolor sit amet, consetetur
-                            sadipscing
-                            elitr, sed diam
-                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        </p>
-                    </div>
 
-                    <div class="py-8 px-6 w-[280px] shadow-lg">
+
+            <div class="flex overflow-hidden scroll-smooth text-center mt-6">
+                <ul id="carousel" class="grid grid-flow-col gap-10">
+
+
+                    <li class="py-8 px-6 w-[282px] h-[270px] shadow-lg">
                         <div class="text-base text-tertiary">
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -272,10 +255,11 @@
                         <p class="text-sm font-playfair mt-6 leading-6	">Lorem ipsum dolor sit amet, consetetur
                             sadipscing
                             elitr, sed diam
-                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                            voluptua.
                         </p>
-                    </div>
-                    <div class="py-8 px-6 w-[280px] shadow-lg">
+                    </li>
+                    <li class="py-8 px-6 w-[282px] h-[270px] shadow-lg">
                         <div class="text-base text-tertiary">
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -287,10 +271,11 @@
                         <p class="text-sm font-playfair mt-6 leading-6	">Lorem ipsum dolor sit amet, consetetur
                             sadipscing
                             elitr, sed diam
-                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                            voluptua.
                         </p>
-                    </div>
-                    <div class="py-8 px-6 w-[280px] shadow-lg">
+                    </li>
+                    <li class="py-8 px-6 w-[282px] h-[270px] shadow-lg">
                         <div class="text-base text-tertiary">
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -302,10 +287,28 @@
                         <p class="text-sm font-playfair mt-6 leading-6	">Lorem ipsum dolor sit amet, consetetur
                             sadipscing
                             elitr, sed diam
-                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                            voluptua.
                         </p>
-                    </div>
-                </div>
+                    </li>
+                    <li class="py-8 px-6 w-[282px] h-[270px] shadow-lg">
+                        <div class="text-base text-tertiary">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-2xl mt-6">Customer name</h3>
+                        <p class="text-sm font-playfair mt-6 leading-6	">Lorem ipsum dolor sit amet, consetetur
+                            sadipscing
+                            elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                            voluptua.
+                        </p>
+                    </li>
+
+                </ul>
             </div>
 
             <div id="slash" class="text-center text-primary text-4xl">
@@ -314,87 +317,11 @@
                 <button class="third">&#9866;</button>
                 <button class="fourth">&#9866;</button>
             </div>
+
+
+
         </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!--  <section class="2xl:mx-[288px] lg:mx-24 mx-4 mt-20">
-            <h2 class="text-3xl font-playfair text-center">What our travelers think of us</h2>
-            <div class="flex justify-between text-center mt-6">
-                <div class="py-8 px-6 w-[280px] shadow-lg">
-                    <div class="text-base text-tertiary">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                    </div>
-                    <h3 class="text-2xl mt-6">Customer name</h3>
-                    <p class="text-sm font-playfair mt-6 leading-6	">Lorem ipsum dolor sit amet, consetetur sadipscing
-                        elitr, sed diam
-                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                </div>
-                <div class="py-8 px-6 w-[280px] shadow-lg">
-                    <div class="text-base text-tertiary">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                    </div>
-                    <h3 class="text-2xl mt-6">Customer name</h3>
-                    <p class="text-sm font-playfair mt-6 leading-6	">Lorem ipsum dolor sit amet, consetetur sadipscing
-                        elitr, sed diam
-                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                </div>
-                <div class="py-8 px-6 w-[280px] shadow-lg">
-                    <div class="text-base text-tertiary">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                    </div>
-                    <h3 class="text-2xl mt-6">Customer name</h3>
-                    <p class="text-sm font-playfair mt-6 leading-6	">Lorem ipsum dolor sit amet, consetetur sadipscing
-                        elitr, sed diam
-                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                </div>
-                <div class="py-8 px-6 w-[280px] shadow-lg">
-                    <div class="text-base text-tertiary">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                    </div>
-                    <h3 class="text-2xl mt-6">Customer name</h3>
-                    <p class="text-sm font-playfair mt-6 leading-6	">Lorem ipsum dolor sit amet, consetetur sadipscing
-                        elitr, sed diam
-                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                </div>
-            </div>
-
-            <div class="text-center mt-6">
-                <button class="text-primary text-4xl">&#9866;</button>
-                <button class="text-primary text-4xl pl-4">&#9866;</button>
-                <button class="text-primary text-4xl pl-4">&#9866;</button>
-                <button class="text-primary text-4xl pl-4">&#9866;</button>
-            </div>
-        </section> -->
 
         <section class="my-20">
             <img class="opacity-75 w-full lg:h-auto h-[322px] object-cover lg:object-cover"
@@ -567,7 +494,8 @@
 
 
     <!-- JavaScript file -->
-    <script src=" assets/js/main.js" defer></script>
+    <script src=" assets/js/script.js"></script>
+    <script src="/assets/js/tailwind-config.js"></script>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/4c6965d86a.js" crossorigin="anonymous"></script>

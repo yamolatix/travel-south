@@ -1,7 +1,11 @@
 #carousel {
     grid-auto-columns: calc((100% / 6) - 12px);
-    transition: all 1s ease-in-out;
+    transition: all 1.5s ease-in-out;
 }
+
+/* #carousel-reviews {
+    grid-auto-columns: calc((100% / ) - 12px);
+} */
 
 .dragging {
     scroll-behavior: auto;
