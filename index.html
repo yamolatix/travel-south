@@ -640,7 +640,6 @@
     </main>
 
     <footer class="bg-primary text-white 2xl:px-[288px] lg:px-24 px-4 pt-10 lg:pb-14 pb-10 mt-20 ">
-        <!-- TODO: hacer que el input del buscador con los iconos esten alienados -->
         <div class="flex justify-between lg:flex-row flex-col">
             <section class="order-last lg:order-none">
                 <div class="flex lg:visible invisible lg:h-[100px] h-0 sm:w-0">
@@ -660,19 +659,18 @@
 
                 </div>
 
-                <!-- TODO: ARREGLAR ALINEAMIENTO DEL BOTON -->
-                <div class="mt-11">
+                <div class="mt-12 lg:mb-0 mb-12">
                     <h2>Subscribe to our Newsletter</h2>
-                    <form action="#" class="mt-2.5">
+                    <form action="#" class="relative mt-2.5">
                         <input type="email" name="email" id="email" placeholder="Email"
-                            class="w-72 h-9 font-playfair text-primary rounded-lg text-sm py-2 pl-4">
+                            class="absolute w-72 h-9 font-playfair text-primary rounded-lg text-sm py-2 pl-4">
                         <button type="submit"
-                            class="text-lg text-white bg-secondary h-[46px] w-[152px] rounded-full hover:bg-tertiary">Subscribe</button>
+                            class="absolute lg:left-60 left-52 -top-1 text-lg text-white bg-secondary h-[46px] w-[152px] rounded-full hover:bg-tertiary">Subscribe</button>
                     </form>
                 </div>
             </section>
 
-            <section class="">
+            <section>
                 <h2>Connect with us</h2>
                 <p class="font-playfair mt-3.5 lg:w-96 w-full">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                     sed diam nonumy eirmod tempor invidunt ut.</p>
