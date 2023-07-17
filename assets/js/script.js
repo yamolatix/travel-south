@@ -1,5 +1,6 @@
 // Responsive Navbar
 const menu = document.getElementById('menu');
+
 function toggleMenu() {
     menu.classList.toggle('hidden');
     menu.classList.toggle('w-full');
@@ -32,7 +33,7 @@ function slideCarousel(btnWrapper, contentWrapper) {
     });
 }
 
-const destinationsWrapper = document.getElementById('destinations-wraper');
+const destinationsWrapper = document.getElementById('destinations-wrapper');
 const destinationsCarousel = document.getElementById('destinations-carousel')
 
 slideCarousel(destinationsWrapper, destinationsCarousel)
