@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <!-- Required meta tags -->
@@ -30,64 +30,57 @@
 
 </head>
 
-<body class="text-primary font-bebas">
+<body class="text-primary font-bebas select-none">
 
+    <!-- Start | Whatsapp Icon -->
     <div>
         <a href="#"
             class="z-10 fixed w-[70px] h-[70px] rounded-full bg-whatsapp text-center bottom-0 right-0 lg:mr-11 mr-4 mb-2.5">
             <i class="fa-brands fa-whatsapp text-4xl text-white mt-4"></i>
         </a>
     </div>
-    <!-- 
-    TODO EN LA PARTE DE SMARTPHONE LAS BARS SE VAN AL COSTADO
-    TODO: LOS ESPACIOS DE LOS COSTADOS DEL NAVBAR FIJAR BIEN
-    TODO: MENU RESPONSIVE: SEPARAR LA LISTA DEL MENU
-    TODO: MENU RESPONSIVE: LA LETRA NO ES TAN FINA COMO DEBERIA SER.
-    TODO: EL TEXTO ESTA UN POCO SEPARADO DEL LOGO
-    TODO: TEXTO DEL LOGO CON LINK AL INICIO
-    TODO: TEXTO DEL LOGO MAS SEPARADO
-    TODO: LAS BARS DEL RESPONSIVE SE TIENEN QUE HACER ANTES APARECEN RECIÉN CUANDO LA PANTALLA ES MUY CHICA
--->
-    <header id="navbar" class=" w-full lg:pt-6 pt-4 2xl:px-[288px] lg:px-24 px-4 justify-between">
-        <nav class="flex items-center">
-            <a href="/index.html">
+    <!-- Finish | Whatsapp Icon -->
+
+    <!-- Start | Header / Navbar -->
+    <header id="navbar" class="w-full lg:pt-6 pt-4 2xl:px-[288px] lg:px-24 px-4">
+        <nav class="flex justify-between">
+            <a href="/index.html" class="flex items-center">
                 <img class="h-auto block max-w-[81px] w-[41px] lg:w-[81px]" src="/assets/images/logo.png"
                     alt="Darom Travel - Logo">
+
+                <div class="lg:w-80 w-40 ml-2 font-playfair uppercase text-left tracking-widest">
+                    <h1 class="text-xs lg:text-2xl">Darom Travel</h2>
+                        <h2 class="text-[8px] lg:text-base">By Gaby Bokler</h2>
+                </div>
             </a>
 
-            <div class="lg:w-80 w-40 ml-2 text-center">
-                <h1 class="font-playfair uppercase text-left tracking-wider text-xs lg:text-2xl">Darom Travel</h2>
-                    <h2 class="font-playfair uppercase text-left tracking-wider text-[8px] lg:text-base">By Gaby Bokler
-                    </h2>
-            </div>
-
             <ul id="menu"
-                class="hidden fixed top-0 right-0 px-10 py-16 bg-secondary z-50 justify-end md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6 md:w-full text-center">
+                class="hidden fixed top-0 right-0 px-10 py-16 bg-secondary z-50 justify-end md:relative md:flex md:p-0 md:bg-transparent md:flex-row flex-col md:space-x-8 space-y-8 md:w-full text-center items-center">
 
                 <li class="md:hidden z-90 fixed top-4 right-6">
                     <a href="javascript:void(0)" class="text-right text-secondary text-xl w-0.5 h-0.5 text-white"
                         onclick="toggleMenu()"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                 </li>
 
-                <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight "
+                <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight transition-colors delay-75"
                         href="/index.html">Home</a></li>
-                <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight "
+                <li><a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight transition-colors delay-75 whitespace-nowrap"
                         href="/about-us.html">About Us</a></li>
-                <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight "
+                <li><a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight transition-colors delay-75"
                         href="/destinations.html">Destinations</a></li>
-                <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight "
+                <li><a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight transition-colors delay-75"
                         href="#">Services</a></li>
-                <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight "
+                <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight transition-colors delay-75"
                         href="#">Tips</a></li>
-                <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight "
+                <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight transition-colors delay-75"
                         href="#">Reviews</a></li>
-                <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight "
+                <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight transition-colors delay-75"
                         href="/contact-us.html">Connect</a></li>
-                <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight lg:visible invisible"
+                <li> <a class="font-playfair md:font-bebas text-white md:text-primary md:hover:text-secondary hover:text-primary md:text-lg text-2xl font-extralight transition-colors delay-75 md:visible invisible"
                         href="#">HE</a></li>
             </ul>
 
-            <div class="flex items-end md:hidden">
+            <div class="flex align-center md:hidden">
                 <button class="text-primary text-xl font-bold hover:opacity-100 duration-300 leading-none"
                     onclick="toggleMenu()">
                     &#9776;
@@ -95,7 +88,9 @@
             </div>
         </nav>
     </header>
+    <!-- Finish | Header / Navbar -->
 
+    <!-- Start | Main -->
     <main>
         <section class="flex flex-col lg:flex-row bg-secondary text-white lg:px-16 px-4 py-10 lg:mt-6 mt-10">
 
@@ -133,7 +128,9 @@
             </div>
         </section>
     </main>
+    <!-- Finish | Main -->
 
+    <!-- Start | Footer -->
     <footer class="bg-primary text-white 2xl:px-[288px] lg:px-24 px-4 pt-10 lg:pb-14 pb-10">
         <div class="flex justify-between lg:flex-row flex-col">
             <section class="order-last lg:order-none">
@@ -160,7 +157,7 @@
                         <input type="email" name="email" id="email" placeholder="Email"
                             class="absolute w-72 h-9 font-playfair text-primary rounded-lg text-sm py-2 pl-4">
                         <button type="submit"
-                            class="absolute lg:left-60 left-52 -top-1 text-lg text-white bg-secondary h-[46px] w-[152px] rounded-full hover:bg-tertiary">Subscribe</button>
+                            class="absolute lg:left-60 left-52 -top-1 text-lg text-white bg-secondary h-[46px] w-[152px] rounded-full hover:bg-tertiary transition-colors delay-75">Subscribe</button>
                     </form>
                 </div>
             </section>
@@ -172,23 +169,30 @@
 
                 <div class="flex items-center mt-5">
                     <i class="fa fa-phone" aria-hidden="true"></i>
-                    <h3 class="font-playfair text-lg pl-2.5">+54-0000-0000</h4>
+                    <h3 class="font-playfair text-lg pl-2.5 select-all">+54-0000-0000</h4>
                 </div>
 
                 <div class="flex items-center mt-5">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <h3 class="font-playfair text-lg pl-2.5">info@daromtravel.com</h4>
+                    <h3 class="font-playfair text-lg pl-2.5 select-all">info@daromtravel.com</h4>
                 </div>
 
-                <div class="mt-5 text-3xl">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                    <i class="fa fa-facebook ml-9" aria-hidden="true"></i>
-                    <i class="fa fa-whatsapp ml-9" aria-hidden="true"></i>
+                <div class="flex space-x-9 mt-5 text-3xl">
+                    <a href="#" class="transition delay-150 duration-300 ease-in-out"><i
+                            class="fa fa-instagram hover:font-bold" aria-hidden="true"></i></a>
+                    <a href="#"><i
+                            class="fa fa-facebook transition-colors delay-75 hover:ease-in-out hover:delay-150 hover:duration-300"
+                            aria-hidden="true"></i></a>
+                    <a href="#"><i
+                            class="fa fa-whatsapp transition-colors delay-75 hover:ease-in-out hover:delay-150 hover:duration-300"
+                            aria-hidden="true"></i></a>
                 </div>
             </section>
 
         </div>
     </footer>
+    <!-- Finish | Footer -->
+
     <!-- JavaScript file -->
     <script src=" assets/js/script.js"></script>
     <script src="/assets/js/tailwind-config.js"></script>
