@@ -13,6 +13,7 @@ tailwind.config = {
             },
             backgroundImage: {
                 'destinations': "url('/assets/images/patagonia.jpg')",
+                'favorites': "url('/assets/images/favorites.jpg')",
                 'destination-name': "url('/assets/images/banner.jpg')"
             }
         }
